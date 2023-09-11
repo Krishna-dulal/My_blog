@@ -14,3 +14,19 @@
 </div>
 
 {% endblock content %}
+
+
+{% for comment in comments %}
+    <div class="comment">
+        <p><strong>{{ comment.author }}</strong> ({{ comment.email }})</p>
+        <p>{{ comment.text }}</p>
+        <p>Posted on {{ comment.created_on }}</p>
+    </div>
+{% endfor %}
+
+<!-- Form for submitting new comments -->
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit Comment</button>
+</form>
