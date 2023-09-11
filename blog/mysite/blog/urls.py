@@ -7,5 +7,6 @@ urlpatterns = [
     path('policy.html', views.policy_view, name='policy.html'),
     path('contact.html', views.contact_view, name='contact.html'),
     path('submit-contact/', views.submit_contact_form, name='submit_contact'),
+    path('about.html', views.about_view, name='about.html'),
       
 ]

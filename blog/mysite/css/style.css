@@ -1,0 +1,17 @@
+/* Custom styles for the navigation bar */
+.navbar {
+    background-color: #12629b;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: green;
+}
+
+.nav-link {
+    color: #fff !important;
+}

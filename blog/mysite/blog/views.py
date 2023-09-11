@@ -25,6 +25,9 @@ def contact_view(request):
     """View for the contact page."""
     return render(request, 'contact.html')
 
+def about_view(request):
+    return render(request, 'about.html')
+
 def submit_contact_form(request):
     """View for submitting the contact form."""
     if request.method == 'POST':
